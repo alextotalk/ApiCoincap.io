@@ -34,7 +34,7 @@ func main() {
 	}
 
 	cookies := []*http.Cookie{cookie}
-	u := url.URL{Host: "https://academy.golang-ninja.com/"}
+	u := url.URL{Host: "http://academy.golang-ninja.com/"}
 
 	jar, err := cookiejar.New(nil)
 	jar.SetCookies(&u, cookies)
